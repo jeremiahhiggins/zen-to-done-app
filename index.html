@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zen to Done Productivity</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <button class="toggle"  onclick="toggleSidenav()">
+
+        <i class="fa fa-bars"></i>
+
+    </button>
+
+
+
+        <nav id="sidenav">
+
+            <ul>
+
+                <li><a href="#"><i class="fa fa-note-sticky"></i><span>Collect</span><i class="fa fa-arrow-right"></i></a></li>
+
+                <li><a href="./process.html"><i class="fa fa-arrow-up-short-wide"></i><span>Process</span></a></li>
+
+                <li><a href="./plan.html"><i class="fa fa-calendar-days"></i><span>Plan</span></a></li>
+
+                <li><a href="./do.html"><i class="fa-solid fa-list-check"></i><span>Do</span></a></li>
+
+             </ul>
+
+            <div id="overlay" onclick="toggleSidenav()"></div>
+
+        </nav>
+
+
+
+    <div class="app-container">
+
+        <header>
+
+            <h1>Zen to Done</h1>
+
+        </header>
+
+
+
+            <!-- Collect Section -->
+
+            <div class="ztd-collect" id="ztd-collect">
+
+                <h2>Collect</h2>
+
+
+
+                <input type="text" id="new" placeholder="Add new task">
+
+                <button id="add-task-btn">Add Task</button>
+
+                <ul id="collect-tasks"></ul>
+
+
+
+                <!--
+
+                <form action="/cgi-bin/hello_get.cgi" method="get">
+
+                    <textarea placeholder="Enter details here..." rows="2" cols="60" name="description"></textarea>
+
+                    <input type="submit" value="submit" />
+
+                </form>
+
+                -->
+
+            </div>
+
+
+
+        <footer>
+
+            <p>&copy; 2025 Zen to Done. All rights reserved.</p>
+
+        </footer>
+
+    </div>
+
+
+
+    <script src="config.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
